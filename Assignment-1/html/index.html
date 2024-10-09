@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>See 'N' Say Storymaker</title>
+    <link rel="stylesheet" href="../CSS/styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="toy-board">
+            <div class="left-panel">
+                <div class="column" id="column1">
+                    <button onclick="cycleOptions(0)" id="part1" class="option-button">Swati</button>
+                    <button onclick="cycleOptions(0)" class="option-button">Ramesh</button>
+                    <button onclick="cycleOptions(0)" class="option-button">The Wizard</button>
+                    <button onclick="cycleOptions(0)" class="option-button">The Sun</button>
+                    <button onclick="cycleOptions(0)" class="option-button">Suresh</button>
+                </div>
+                <div class="column" id="column2">
+                    <button onclick="cycleOptions(1)" id="part2" class="option-button">sat on</button>
+                    <button onclick="cycleOptions(1)" class="option-button">loves</button>
+                    <button onclick="cycleOptions(1)" class="option-button">makes</button>
+                    <button onclick="cycleOptions(1)" class="option-button">teaches</button>
+                    <button onclick="cycleOptions(1)" class="option-button">is lazy</button>
+                </div>
+                <div class="column" id="column3">
+                    <button onclick="cycleOptions(2)" id="part3" class="option-button">the red</button>
+                    <button onclick="cycleOptions(2)" class="option-button">to play</button>
+                    <button onclick="cycleOptions(2)" class="option-button">piano</button>
+                    <button onclick="cycleOptions(2)" class="option-button">weird face</button>
+                    <button onclick="cycleOptions(2)" class="option-button">under tree</button>
+                </div>
+                <div class="column" id="column4">
+                    <button onclick="cycleOptions(3)" id="part4" class="option-button">bicycle</button>
+                    <button onclick="cycleOptions(3)" class="option-button">and</button>
+                    <button onclick="cycleOptions(3)" class="option-button">danced with</button>
+                    <button onclick="cycleOptions(3)" class="option-button">and arrests</button>
+                    <button onclick="cycleOptions(3)" class="option-button">to make</button>
+                </div>
+                <div class="column" id="column5">
+                    <button onclick="cycleOptions(4)" id="part5" class="option-button">on Saturday</button>
+                    <button onclick="cycleOptions(4)" class="option-button">eats pizza</button>
+                    <button onclick="cycleOptions(4)" class="option-button">crocodile</button>
+                    <button onclick="cycleOptions(4)" class="option-button">Rapunzel</button>
+                    <button onclick="cycleOptions(4)" class="option-button">cocktail</button>
+                </div>
+            </div>
+            <div class="right-panel">
+                <button id="playStory" onclick="showStory()">Play Story</button>
+                <button id="resetStory" onclick="resetStory()">Reset</button>
+                <!-- Added Speak Story button -->
+                <button id="speak" onclick="convertToSpeech()">Speak</button>
+            </div>
+        </div>
+        <div id="storyDisplay" class="story-output"></div>
+    </div>
+    <script src="../Js/script.js"></script>
+</body>
+</html>
