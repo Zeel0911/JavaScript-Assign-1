@@ -4,12 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>See 'N' Say Storymaker</title>
-    <link rel="stylesheet" href="../CSS/styles.css">
+    <link rel="stylesheet" href="../CSS/styles.css"> <!-- Link to external CSS for styling -->
 </head>
 <body>
     <div class="container">
         <div class="toy-board">
+            <!-- Left panel containing all the option columns -->
             <div class="left-panel">
+                <!-- Column 1 with options for the first part of the story -->
                 <div class="column" id="column1">
                     <button onclick="cycleOptions(0)" id="part1" class="option-button">Swati</button>
                     <button onclick="cycleOptions(0)" class="option-button">Ramesh</button>
@@ -17,6 +19,7 @@
                     <button onclick="cycleOptions(0)" class="option-button">The Sun</button>
                     <button onclick="cycleOptions(0)" class="option-button">Suresh</button>
                 </div>
+                <!-- Column 2 with options for the second part of the story -->
                 <div class="column" id="column2">
                     <button onclick="cycleOptions(1)" id="part2" class="option-button">sat on</button>
                     <button onclick="cycleOptions(1)" class="option-button">loves</button>
@@ -24,6 +27,7 @@
                     <button onclick="cycleOptions(1)" class="option-button">teaches</button>
                     <button onclick="cycleOptions(1)" class="option-button">is lazy</button>
                 </div>
+                <!-- Column 3 with options for the third part of the story -->
                 <div class="column" id="column3">
                     <button onclick="cycleOptions(2)" id="part3" class="option-button">the red</button>
                     <button onclick="cycleOptions(2)" class="option-button">to play</button>
@@ -31,6 +35,7 @@
                     <button onclick="cycleOptions(2)" class="option-button">weird face</button>
                     <button onclick="cycleOptions(2)" class="option-button">under tree</button>
                 </div>
+                <!-- Column 4 with options for the fourth part of the story -->
                 <div class="column" id="column4">
                     <button onclick="cycleOptions(3)" id="part4" class="option-button">bicycle</button>
                     <button onclick="cycleOptions(3)" class="option-button">and</button>
@@ -38,6 +43,7 @@
                     <button onclick="cycleOptions(3)" class="option-button">and arrests</button>
                     <button onclick="cycleOptions(3)" class="option-button">to make</button>
                 </div>
+                <!-- Column 5 with options for the fifth part of the story -->
                 <div class="column" id="column5">
                     <button onclick="cycleOptions(4)" id="part5" class="option-button">on Saturday</button>
                     <button onclick="cycleOptions(4)" class="option-button">eats pizza</button>
@@ -46,15 +52,22 @@
                     <button onclick="cycleOptions(4)" class="option-button">cocktail</button>
                 </div>
             </div>
+            
+            <!-- Right panel containing action buttons -->
             <div class="right-panel">
+                <!-- Button to generate and display the story -->
                 <button id="playStory" onclick="showStory()">Play Story</button>
+                <!-- Button to reset the story -->
                 <button id="resetStory" onclick="resetStory()">Reset</button>
-                <!-- Added Speak Story button -->
+                <!-- Button to speak the story using text-to-speech -->
                 <button id="speak" onclick="convertToSpeech()">Speak</button>
             </div>
         </div>
+        <!-- Display area for the generated story -->
         <div id="storyDisplay" class="story-output"></div>
     </div>
+    
+    <!-- Link to the external JavaScript file -->
     <script src="../Js/script.js"></script>
 </body>
 </html>
